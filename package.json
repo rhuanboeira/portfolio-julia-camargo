@@ -1,0 +1,16 @@
+{
+  "name": "portfolio-ju",
+  "version": "1.0.0",
+  "description": "Landing page estática do portfólio de Júlia Camargo, VideoMaker e StoryMaker.",
+  "main": "app.js",
+  "scripts": {
+    "test": "node test/portfolio.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "jsdom": "^30.0.1"
+  }
+}
