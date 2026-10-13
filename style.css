@@ -216,7 +216,7 @@ p { margin: 0; }
 .section-heading h2, .branding h2, .contact h2 { font-size: clamp(2.35rem, 7vw, 3.4rem); }
 .about .section-heading { text-align: center; }
 .about-photo-wrap { max-width: 25rem; margin-inline: auto; }
-.about-photo { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 1rem; }
+.about-photo { width: 80%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 1rem; }
 .about-copy { display: grid; gap: 1rem; max-width: 38rem; }
 .about-greeting { color: var(--color-5); font-family: var(--font-display); font-size: 1.45rem; }
 
