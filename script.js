@@ -40,10 +40,4 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
   });
 });
 
-// Lazy-load: troca a thumbnail pelo iframe do YouTube só ao clicar.
-document.querySelectorAll('.video-embed').forEach(embed => {
-  embed.addEventListener('click', () => {
-    const videoId = embed.getAttribute('data-video');
-    embed.innerHTML = '<iframe src="https://youtube.com/shorts/ibt2fwM7358?si=6Wxt3nJ4Jz0Izhb7' + videoId + '?autoplay=1&rel=0" title="Compilado de projetos — Júlia Camargo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
-  });
-});
+

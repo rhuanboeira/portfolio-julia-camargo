@@ -325,3 +325,17 @@ p { margin: 0; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: 0.01ms !important; }
 }
+.video-showcase { text-align: center; }
+.video-embed {
+  position: relative;
+  max-width: 22rem;
+  margin: 0 auto;
+  aspect-ratio: 9 / 16;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: var(--color-2);
+  box-shadow: var(--shadow-soft);
+  transition: box-shadow var(--transition);
+}
+.video-embed:hover { box-shadow: 0 1.25rem 3rem rgba(64, 46, 25, 0.2); }
+.video-embed iframe { width: 100%; height: 100%; border: 0; }
