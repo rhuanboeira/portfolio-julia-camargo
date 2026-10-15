@@ -215,8 +215,8 @@ p { margin: 0; }
 .about-content { display: flex; flex-direction: column; align-items: center; gap: 2rem; }
 .section-heading h2, .branding h2, .contact h2 { font-size: clamp(2.35rem, 7vw, 3.4rem); }
 .about .section-heading { text-align: center; }
-.about-photo-wrap { max-width: 25rem; width: 100%; }
-.about-photo { width: 80%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 1rem; }
+.about-photo-wrap { max-width: 17rem; width: 100%; text-align: center; }
+.about-photo { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 1rem; }
 .about-copy { display: grid; gap: 1rem; max-width: 38rem; width: 100%; }
 .about-greeting { color: var(--color-5); font-family: var(--font-display); font-size: 1.45rem; }
 
@@ -302,10 +302,9 @@ p { margin: 0; }
   .hero-profession { margin-inline: 0; }
   .hero-photo-wrap { max-width: 30rem; }
   .hero-photo { height: 34rem; }
-.about-content { display: grid; grid-template-columns: 1fr 1.1fr; align-items: center; gap: 4rem; }
-  .about .section-heading { grid-column: 1 / -1; }
-  .about-photo-wrap { grid-column: 1; grid-row: 2; }
-  .about-copy { grid-column: 2; grid-row: 2; }
+.about-content { display: flex; flex-direction: column; align-items: center; gap: 3rem; }
+.about-photo-wrap { max-width: 28rem; }
+.about-copy { max-width: 42rem; text-align: center; }
   .gallery { grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
   .differentials-grid { grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
   .differential-card:last-child { grid-column: 2; }
