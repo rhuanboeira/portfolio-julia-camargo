@@ -129,7 +129,7 @@ p { margin: 0; }
   transform: translateY(-0.5rem);
   transition: max-height var(--transition), padding var(--transition), transform var(--transition);
 }
-.site-nav.is-open { max-height: 18rem; padding-block: 1rem 1.25rem; transform: translateY(0); }
+.site-nav.is-open { max-height: 24rem; padding-block: 1rem 1.25rem; transform: translateY(0); }
 .site-nav:not(.is-open) { pointer-events: none; }
 .site-nav ul { display: grid; gap: 0.15rem; margin: 0; padding: 0; list-style: none; }
 .site-nav a {
@@ -215,7 +215,7 @@ p { margin: 0; }
 .about-content { display: flex; flex-direction: column; align-items: center; gap: 2rem; }
 .section-heading h2, .branding h2, .contact h2 { font-size: clamp(2.35rem, 7vw, 3.4rem); }
 .about .section-heading { text-align: center; }
-.about-photo-wrap { max-width: 17rem; width: 100%; text-align: center; }
+.about-photo-wrap { max-width: 19rem; width: 100%; text-align: center; }
 .about-photo { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 1rem; }
 .about-copy { display: grid; gap: 1rem; max-width: 38rem; width: 100%; }
 .about-greeting { color: var(--color-5); font-family: var(--font-display); font-size: 1.45rem; }
@@ -361,4 +361,63 @@ p { margin: 0; }
   color: var(--color-5);
   font-weight: 500;
   letter-spacing: 0.05em;
+}
+
+/* ============================================================
+   Adições: localização no hero, serviços e dúvidas frequentes
+   ============================================================ */
+.hero-location {
+  margin: -1rem 0 1.8rem;
+  color: var(--color-5);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+.hero-location i { margin-right: 0.35rem; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; }
+.btn-outline { background: transparent; color: var(--color-5); border: 2px solid var(--color-5); padding: calc(0.8rem - 2px) 1.75rem; }
+.btn-outline:hover, .btn-outline:focus-visible { color: #fff; border-color: var(--color-4); }
+
+.differential-card p { margin-top: 0.6rem; font-size: 0.9rem; line-height: 1.6; }
+
+.services { background: var(--color-1); padding-top: 0; }
+.services-grid { display: grid; gap: 1rem; }
+.service-card {
+  padding: 2rem 1.5rem;
+  border-radius: 1rem;
+  background: var(--color-3);
+  text-align: center;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.service-card:hover { box-shadow: var(--shadow-soft); transform: translateY(-4px); }
+.service-card i { color: var(--color-5); font-size: 2rem; }
+.service-card h3 { margin: 1rem 0 0.6rem; font-size: 1.45rem; }
+.service-card p { font-size: 0.9rem; line-height: 1.65; }
+.services-note { max-width: 38rem; margin: 2.5rem auto 1.5rem; text-align: center; }
+.services-cta { text-align: center; }
+
+.faq { background: var(--color-2); }
+.faq-content { max-width: 44rem; }
+.faq-item {
+  margin-bottom: 0.75rem;
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.55);
+}
+.faq-item summary {
+  padding: 1.1rem 1.4rem;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: "+"; color: var(--color-5); font-size: 1.3rem; line-height: 1; }
+.faq-item[open] summary::after { content: "–"; }
+.faq-item p { padding: 0 1.4rem 1.2rem; }
+
+@media (min-width: 768px) {
+  .hero-actions { justify-content: flex-start; }
+  .services-grid { grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
 }
